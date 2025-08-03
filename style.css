@@ -1,0 +1,182 @@
+/* Warna khas Shopee */
+:root {
+    --shopee-orange: #EE4D2D;
+    --shopee-blue: #007bff; /* Bisa diganti jika ada warna biru spesifik Shopee */
+    --text-color: #333;
+    --light-grey: #f4f4f4;
+    --dark-grey: #333;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Menggunakan font Roboto */
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-grey);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: var(--shopee-orange); /* Warna oranye Shopee */
+    color: white;
+    padding: 15px 20px;
+    display: flex; /* Untuk menata logo dan contact us */
+    justify-content: space-between; /* Menjaga jarak antar elemen */
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.contact-us-text {
+    font-size: 2rem; /* Ukuran besar untuk "Contact US" */
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white; /* Teks putih di atas oranye */
+    letter-spacing: 2px;
+}
+
+.contact-us-text span:last-child {
+    color: #ffd700; /* Warna sedikit berbeda untuk "US" agar lebih menonjol, seperti di gambar */
+}
+
+
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.intro-section, .info-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.intro-section h2, .contact-form-section h3 {
+    color: var(--shopee-orange);
+    margin-bottom: 15px;
+}
+
+.contact-form-section {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    width: calc(100% - 22px); /* Adjust for padding and border */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Pastikan padding dan border termasuk dalam lebar */
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745; /* Tetap hijau untuk WhatsApp feel */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.faq-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: var(--shopee-orange);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.faq-link:hover {
+    background-color: #c93a1e; /* Sedikit lebih gelap dari oranye */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: var(--dark-grey); /* Warna gelap untuk footer */
+    color: white;
+}
+
+/* Styling untuk Tombol WhatsApp */
+.whatsapp-cta-section {
+    text-align: center; /* Rata tengah isi section */
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.whatsapp-cta-section h3 {
+    color: var(--text-color); /* Atau warna yang Anda inginkan */
+    margin-bottom: 20px;
+}
+
+.whatsapp-button {
+    display: inline-flex; /* Agar ikon dan teks sejajar */
+    align-items: center; /* Pusatkan secara vertikal */
+    padding: 12px 25px;
+    background-color: #25D366; /* Warna hijau WhatsApp */
+    color: white;
+    text-decoration: none; /* Hilangkan garis bawah default link */
+    border-radius: 50px; /* Membuat tombol lonjong */
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sedikit bayangan */
+}
+
+.whatsapp-button:hover {
+    background-color: #1DA851; /* Warna hijau lebih gelap saat di-hover */
+    transform: translateY(-2px); /* Efek sedikit naik saat di-hover */
+}
+
+.whatsapp-icon {
+    width: 24px; /* Ukuran ikon */
+    height: 24px;
+    margin-right: 10px; /* Jarak antara ikon dan teks */
+    filter: brightness(0) invert(1); /* Membuat ikon putih jika aslinya berwarna gelap */
+}
+
